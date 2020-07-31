@@ -11,7 +11,7 @@ func loopData(data []int, handleData chan<- int) {
 	}
 }
 func main() {
-	data := []int{1, 2, 3, 4, 6}
+	data := []int{1, 2, 3, 4}
 
 	handleData := make(chan int)
 	go loopData(data, handleData)
